@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Universal Video Downloader</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+
+        🎬 Universal Video Downloader
+
+    </div>
+
+    <form id="fetchForm">
+
+        <div class="search-box">
+
+            <input
+
+                    type="text"
+
+                    id="url"
+
+                    name="url"
+
+                    placeholder="Paste YouTube / Instagram / Facebook URL"
+
+                    required>
+
+            <button
+
+                    id="fetchButton"
+
+                    type="submit">
+
+                Fetch
+
+            </button>
+
+        </div>
+
+    </form>
+
+    <div
+
+            id="loading"
+
+            class="loading">
+
+        <div class="spinner"></div>
+
+        <h3>
+
+            Fetching video information...
+
+        </h3>
+
+        <p>
+
+            Please wait...
+
+        </p>
+
+    </div>
+
+    <div
+
+            id="error"
+
+            class="error">
+
+    </div>
+
+    <!-- AJAX will insert the video card here -->
+
+    <div id="videoContainer">
+
+    </div>
+    
+    </div>
+
+<script
+
+        th:src="@{/js/script.js}">
+
+</script>
+
+</body>
+
+</html>
