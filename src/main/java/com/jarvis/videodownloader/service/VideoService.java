@@ -18,13 +18,11 @@ import com.jarvis.videodownloader.model.VideoInfo;
 public class VideoService {
 
     public VideoInfo fetchVideoInfo(String url) throws Exception {
-
     	ProcessBuilder processBuilder = new ProcessBuilder(
     	        "yt-dlp",
-    	        "--cookies",
-    	        "/home/ec2-user/www.youtube.com_cookies.txt",
     	        "-J",
-    	        url);
+    	        url
+    	);
 
         Process process = processBuilder.start();
 

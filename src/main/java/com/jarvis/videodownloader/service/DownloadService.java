@@ -69,51 +69,27 @@ ProcessBuilder pb;
 if ("bestaudio".equals(formatId)) {
 
 	pb = new ProcessBuilder(
-
-		      "yt-dlp",
-
-		      "--cookies",
-		      "/home/ec2-user/www.youtube.com_cookies.txt",
-
-		      "-x",
-
-		      "--audio-format",
-
-		      "mp3",
-
-		      "-o",
-
-		      output,
-
-		      url
-
-		);
+	        "yt-dlp",
+	        "-x",
+	        "--audio-format",
+	        "mp3",
+	        "-o",
+	        output,
+	        url
+	);
 }
 
 else {
-
 	pb = new ProcessBuilder(
-
-		      "yt-dlp",
-
-		      "--cookies",
-		      "/home/ec2-user/www.youtube.com_cookies.txt",
-
-		      "-f",
-
-		      formatId,
-
-		      "--merge-output-format",
-
-		      "mp4",
-
-		      "-o",
-
-		      output,
-
-		      url
-
-		);
+	        "yt-dlp",
+	        "-f",
+	        formatId,
+	        "--merge-output-format",
+	        "mp4",
+	        "-o",
+	        output,
+	        url
+	);
 
 }
 
