@@ -19,10 +19,12 @@ public class VideoService {
 
     public VideoInfo fetchVideoInfo(String url) throws Exception {
 
-        ProcessBuilder processBuilder = new ProcessBuilder(
-                "yt-dlp",
-                "-J",
-                url);
+    	ProcessBuilder processBuilder = new ProcessBuilder(
+    	        "yt-dlp",
+    	        "--cookies",
+    	        "/home/ec2-user/www.youtube.com_cookies.txt",
+    	        "-J",
+    	        url);
 
         Process process = processBuilder.start();
 
