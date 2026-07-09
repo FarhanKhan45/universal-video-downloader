@@ -62,8 +62,7 @@ File dir = new File(folderName);
 dir.mkdirs();
 
 String output =
-  folderName + "/%(title)s.%(ext)s";
-
+folderName + "/%(id)s.%(ext)s";
 ProcessBuilder pb;
 
 if ("bestaudio".equals(formatId)) {
@@ -73,6 +72,8 @@ if ("bestaudio".equals(formatId)) {
 	        "-x",
 	        "--audio-format",
 	        "mp3",
+	        "--restrict-filenames",
+	        "--windows-filenames",
 	        "-o",
 	        output,
 	        url
@@ -86,6 +87,8 @@ else {
 	        formatId,
 	        "--merge-output-format",
 	        "mp4",
+	        "--restrict-filenames",
+	        "--windows-filenames",
 	        "-o",
 	        output,
 	        url
