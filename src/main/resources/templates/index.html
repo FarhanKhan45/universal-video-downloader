@@ -7,8 +7,58 @@
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+          
+<link rel="icon" type="image/png" th:href="@{/favicon.png}">
 
-    <title>Universal Video Downloader</title>
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification"
+          content="GXucY80ECpMpuyxuD2kv8qJTMv8pAWhZ57wuBBHBhJ8" />
+
+    <title>Universal Video Downloader | Java Spring Boot | Download Videos Online</title>
+
+    <meta name="description"
+          content="Universal Video Downloader built using Java 21 and Spring Boot. Download videos from supported platforms with multiple quality options, real-time progress tracking, and secure cloud deployment on AWS.">
+
+    <meta name="keywords"
+          content="Universal Video Downloader, Video Downloader, Java, Spring Boot, AWS EC2, Instagram Downloader, Facebook Downloader, Video Download, FFmpeg, yt-dlp">
+
+    <meta name="author"
+          content="Farhan Khan">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <link rel="canonical"
+          href="https://videodownloader.mooo.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="Universal Video Downloader">
+
+    <meta property="og:description"
+          content="Production-ready Universal Video Downloader built with Java 21 & Spring Boot.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://videodownloader.mooo.com/">
+
+    <meta property="og:image"
+          content="https://videodownloader.mooo.com/logo.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="Universal Video Downloader">
+
+    <meta name="twitter:description"
+          content="Download videos from supported platforms with Java Spring Boot.">
+
+    <meta name="twitter:image"
+          content="https://videodownloader.mooo.com/logo.png">
 
     <link rel="stylesheet"
           th:href="@{/css/style.css}">
@@ -30,21 +80,14 @@
         <div class="search-box">
 
             <input
-
                     type="text"
-
                     id="url"
-
                     name="url"
-
                     placeholder="Paste YouTube / Instagram / Facebook URL"
-
                     required>
 
             <button
-
                     id="fetchButton"
-
                     type="submit">
 
                 Fetch
@@ -56,9 +99,7 @@
     </form>
 
     <div
-
             id="loading"
-
             class="loading">
 
         <div class="spinner"></div>
@@ -78,9 +119,7 @@
     </div>
 
     <div
-
             id="error"
-
             class="error">
 
     </div>
@@ -90,17 +129,15 @@
     <div id="videoContainer">
 
     </div>
-    
-    </div>
 
-<script
+</div>
 
-        th:src="@{/js/script.js}">
+<script th:src="@{/js/script.js}"></script>
 
-</script>
 <footer class="footer">
     Designed &amp; Developed by <strong>Farhan Khan ❤️</strong>
 </footer>
+
 </body>
 
 </html>
